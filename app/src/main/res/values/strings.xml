@@ -2,10 +2,10 @@
 <resources>
 
     <string name="hello">Marios says:</string>
-    <string name="app_name">LonelyTwitter</string>
+    <string name="app_name">LonelyTwitterRefactoring</string>
     <string name="save">Save</string>
     <string name="clear">Clear</string>
-    <string name="invalid_tweet">Invalid tweet</string>
-    <string name="important_identifier">*</string>
-    
+    // Removed R.string.invalid_tweet and R.string.important_identifier as they were unused in the project
+    <string name="filename">file.sav</string>
+
 </resources>

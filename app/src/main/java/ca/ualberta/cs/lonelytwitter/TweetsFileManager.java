@@ -12,6 +12,8 @@ import java.util.List;
 import android.content.Context;
 import android.util.Log;
 
+import lonelytweet.NormalLonelyTweet;
+
 public class TweetsFileManager {
 
 	private Context ctx;
@@ -25,7 +27,7 @@ public class TweetsFileManager {
 		List<NormalLonelyTweet> tweets = new ArrayList<NormalLonelyTweet>();
 
 		try {
-			FileInputStream fis = ctx.openFileInput("file.sav");
+			FileInputStream fis = ctx.openFileInput(String.valueOf(R.string.filename));
 			ObjectInputStream ois = new ObjectInputStream(fis);
 
 			Object o = ois.readObject();
